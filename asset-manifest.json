@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mon-vieux-grimoire-deploy/static/css/main.f9d98d58.css",
-    "main.js": "/mon-vieux-grimoire-deploy/static/js/main.16b2bf95.js",
+    "main.js": "/mon-vieux-grimoire-deploy/static/js/main.f47fd209.js",
     "static/js/787.2c0e5b38.chunk.js": "/mon-vieux-grimoire-deploy/static/js/787.2c0e5b38.chunk.js",
     "static/media/home_banner.jpg": "/mon-vieux-grimoire-deploy/static/media/home_banner.e160219c56381f5d72be.jpg",
     "static/media/book_delete.png": "/mon-vieux-grimoire-deploy/static/media/book_delete.f0aec92a2dde895664ec.png",
@@ -11,11 +11,11 @@
     "static/media/map_footer.png": "/mon-vieux-grimoire-deploy/static/media/map_footer.a4eb4130dd9828775917.png",
     "index.html": "/mon-vieux-grimoire-deploy/index.html",
     "main.f9d98d58.css.map": "/mon-vieux-grimoire-deploy/static/css/main.f9d98d58.css.map",
-    "main.16b2bf95.js.map": "/mon-vieux-grimoire-deploy/static/js/main.16b2bf95.js.map",
+    "main.f47fd209.js.map": "/mon-vieux-grimoire-deploy/static/js/main.f47fd209.js.map",
     "787.2c0e5b38.chunk.js.map": "/mon-vieux-grimoire-deploy/static/js/787.2c0e5b38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9d98d58.css",
-    "static/js/main.16b2bf95.js"
+    "static/js/main.f47fd209.js"
   ]
 }

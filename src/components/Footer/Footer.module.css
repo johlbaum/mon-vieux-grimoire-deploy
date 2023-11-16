@@ -5,9 +5,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color: #2C1810
+    color: #2C1810;
+    cursor: pointer;
 }
 
 .MapBlock {

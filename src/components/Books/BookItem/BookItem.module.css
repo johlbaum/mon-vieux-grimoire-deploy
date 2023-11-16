@@ -18,8 +18,8 @@
 }
 .BookItem h2 {
     font-size: 18px;
-    font-weight: 700;
-    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
     margin-bottom: 10px ;
 }
 
@@ -27,16 +27,16 @@
     width: 206px;
     height: 260px;
     object-position: center;
-    object-fit: contain;
+    object-fit: cover;
 }
 .BookItem h3 {
     font-size: 18px;
-    font-weight: 700;
-    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
     margin-bottom: 10px ;
 }
 .BookItem p {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #796157;
     margin-bottom: 10px ;

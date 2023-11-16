@@ -39,7 +39,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 35px;
+   
+}
 
+.Form input:focus {
+    outline: none; 
 }
 
 

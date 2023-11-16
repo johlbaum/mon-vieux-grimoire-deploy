@@ -26,24 +26,33 @@
 }
 
 .Home header {
-    text-align: center;
-    font-family: "Libre Baskerville", serif;
-    padding-top: 85px;
+    font-family: 'Libre Baskerville', serif;
+    background-image: url('/src/images/line.jpg');
+    background-size: 70% auto; 
+    background-repeat: no-repeat;
+    background-position: center 117px; 
     display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    padding-top: 85px;
+    flex-direction: column;
+    height: 200px;
 }
 
 .Home header h1 {
     font-style: italic;
     font-size: 44px;
     color: #796157;
+    font-family: "Libre Baskerville";
+    
 }
 
 .Home header p {
     font-style: italic;
-    font-size: 28px;
-    padding-block: 10px;
+    font-size: 20px;
+    padding-block: 20px;
+    font-family: "Libre Baskerville";
 }
 
 
@@ -51,5 +60,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-block: 140px;
+    margin-block: 80px;
 }

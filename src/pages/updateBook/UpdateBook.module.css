@@ -11,6 +11,9 @@
 }
 
 .Container p {
-    font-family: "Libre Baskerville", serif;
+ 
     font-size: 16px;
+    font-family: "Montserrat", serif;
+
+    padding-top: 20px;
 }

@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+
+.SignIn svg {
+    margin-top: 50px;
+}
+
 .Notification {
     width: 40%;
     margin-top: 30px;
@@ -38,7 +43,7 @@
 .Form, .Form label {
     display: flex;
     flex-direction: column;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     line-height: 24px;
 

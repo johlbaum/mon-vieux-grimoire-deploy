@@ -8,11 +8,13 @@ import { useFilePreview } from '../../../lib/customHooks';
 import addFileIMG from '../../../images/add_file.png';
 import styles from './BookForm.module.css';
 import { updateBook, addBook } from '../../../lib/common';
+import Spinner from '../../Spinner/Spinner';
 
 function BookForm({ book, validate }) {
   const userRating = book ? book.ratings.find((elt) => elt.userId === localStorage.getItem('userId'))?.grade : 0;
 
   const [rating, setRating] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
   const {
@@ -44,6 +46,7 @@ function BookForm({ book, validate }) {
   }, [formState]);
 
   const onSubmit = async (data) => {
+    setLoading(true);
     // When we create a new book
     if (!book) {
       if (!data.file[0]) {
@@ -57,6 +60,7 @@ function BookForm({ book, validate }) {
       const newBook = await addBook(data);
       if (!newBook.error) {
         validate(true);
+        setLoading(false);
       } else {
         alert(newBook.message);
       }
@@ -76,19 +80,19 @@ function BookForm({ book, validate }) {
       <input type="hidden" id="id" {...register('id')} />
       <label htmlFor="title">
         <p>Titre du livre</p>
-        <input type="text" id="title" {...register('title')} />
+        <input type="text" id="title" {...register('title')} autoComplete="off" />
       </label>
       <label htmlFor="author">
         <p>Auteur</p>
-        <input type="text" id="author" {...register('author')} />
+        <input type="text" id="author" {...register('author')} autoComplete="off" />
       </label>
       <label htmlFor="year">
         <p>Année de publication</p>
-        <input type="text" id="year" {...register('year')} />
+        <input type="text" id="year" {...register('year')} autoComplete="off" />
       </label>
       <label htmlFor="genre">
         <p>Genre</p>
-        <input type="text" id="genre" {...register('genre')} />
+        <input type="text" id="genre" {...register('genre')} autoComplete="off" />
       </label>
       <label htmlFor="rate">
         <p>Note</p>
@@ -115,6 +119,7 @@ function BookForm({ book, validate }) {
         <input {...register('file')} type="file" id="file" />
       </label>
       <button type="submit">Publier</button>
+      {loading ? <Spinner /> : null}
     </form>
   );
 }

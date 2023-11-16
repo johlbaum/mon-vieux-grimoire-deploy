@@ -21,7 +21,7 @@ function App() {
     setUser(connectedUser);
   }, [connectedUser]);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/mon-vieux-grimoire-deploy">
       <div>
         <ScrollToTop />
         <Header user={user} setUser={setUser} />
